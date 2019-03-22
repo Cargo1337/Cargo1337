@@ -9,7 +9,11 @@
   <meta name="author" content="">
 
   <title>CarGO 1337</title>
-
+    
+    
+<script src="https://js.stripe.com/v3"></script>
+    
+    
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -116,6 +120,10 @@
               </div>
               <div class="card-footer">
                 <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9733;</small>
+                  
+                  <button id="checkout-button" role="link">Pay</button>
+<div id="error-message"></div>
+
               </div>
             </div>
           </div>
@@ -230,7 +238,7 @@
                   
                     <div class="col-lg-4 col-md-6 mb-4">
             <div class="card h-100">
-              <a href="#"><img style="width:90%" class="rounded mx-auto d-block" src="crackers.jpg" alt=""></a>
+              <a href="#"><img style="width:100%" class="rounded mx-auto d-block" src="crackers.jpg" alt=""></a>
               <div class="card-body">
                 <h4 class="card-title">
                   <a href="#">Honey Maid Teddy Graham</a>
@@ -246,7 +254,7 @@
           </div>
                     <div class="col-lg-4 col-md-6 mb-4">
             <div class="card h-100">
-              <a href="#"><img style="width:90%" class="rounded mx-auto d-block" src="crackers.jpg" alt=""></a>
+              <a href="#"><img style="width:60%" class="rounded mx-auto d-block" src="animalc.jpg" alt=""></a>
               <div class="card-body">
                 <h4 class="card-title">
                   <a href="#">Barnum's Animals Crackers</a>
@@ -286,93 +294,11 @@ Great to pack in lunches, picnics, swimming, beach, ANYTIME!!!
                   
                   
 
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-              <div class="card-body">
-                <h4 class="card-title">
-                  <a href="#">Item Three</a>
-                </h4>
-                <h5>$24.99</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-              <div class="card-body">
-                <h4 class="card-title">
-                  <a href="#">Item Four</a>
-                </h4>
-                <h5>$24.99</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-              <div class="card-body">
-                <h4 class="card-title">
-                  <a href="#">Item Five</a>
-                </h4>
-                <h5>$24.99</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-              <div class="card-body">
-                <h4 class="card-title">
-                  <a href="#">Item Six</a>
-                </h4>
-                <h5>$24.99</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-              </div>
-            </div>
-          </div>
+    
                   
                    <div class="row">
 
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card h-100">
-                <br>
-                
-              <a href="#"><img style="width:20%" class="rounded mx-auto d-block" src="coke1.jpg" alt=""></a>
-              <div class="card-body">
-                <h4 class="card-title" class="text-center">
-                 <a class="text-center" href="#">Coca-Cola Mini-Can</a>
-                </h4>
-                <h5>$1.25</h5>
-                  
-                <p class="card-text">Ice-Cold Chilled to perfection!
-                    <br>
-                    Perfect size for snacking and on-the-go
-                  </p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9733;</small>
-              </div>
-            </div>
-          </div>
+        
      <div class="row">
 
        
@@ -393,7 +319,7 @@ Great to pack in lunches, picnics, swimming, beach, ANYTIME!!!
   <!-- Footer -->
   <footer class="py-5 bg-dark">
     <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+      <p class="m-0 text-center text-white">Copyright &copy; Namaste 1337</p>
     </div>
     <!-- /.container -->
   </footer>
@@ -401,6 +327,35 @@ Great to pack in lunches, picnics, swimming, beach, ANYTIME!!!
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  var stripe = Stripe('pk_live_eEc1uwBfn7c13ymz6m6oFw9A', {
+    betas: ['checkout_beta_4']
+  });
+
+  var checkoutButton = document.getElementById('checkout-button');
+  checkoutButton.addEventListener('click', function () {
+    // When the customer clicks on the button, redirect
+    // them to Checkout.
+    stripe.redirectToCheckout({
+      items: [{sku: 'sku_Ek5wDsWDL7J1gY', quantity: 1}],
+
+      // Note that it is not guaranteed your customers will be redirected to this
+      // URL *100%* of the time, it's possible that they could e.g. close the
+      // tab between form submission and the redirect.
+      successUrl: 'https://cargo1337.github.io/Cargo1337/success',
+      cancelUrl: 'https://cargo1337.github.io/Cargo1337/canceled',
+    })
+    .then(function (result) {
+      if (result.error) {
+        // If `redirectToCheckout` fails due to a browser or network
+        // error, display the localized error message to your customer.
+        var displayError = document.getElementById('error-message');
+        displayError.textContent = result.error.message;
+      }
+    });
+  });
+</script>
 
 </body>
 
